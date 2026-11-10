@@ -1,6 +1,0 @@
-<template id="tpl-badge">
-  <span :class="['badge', statusInfo.class]" @mouseenter="showTooltip = true" @mouseleave="showTooltip = false">
-    {{ statusInfo.icon }} {{ statusInfo.label }}
-    <div v-if="showTooltip && catatan" class="tooltip" v-html="catatan"></div>
-  </span>
-</template>
