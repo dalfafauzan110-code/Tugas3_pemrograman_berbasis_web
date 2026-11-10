@@ -1,0 +1,161 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+/* Header Banner UT */
+.header-banner {
+  background-color: #003366;
+  color: white;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+.header-banner h1 {
+  margin: 0 0 5px 0;
+  font-size: 24px;
+}
+.header-banner p {
+  margin: 0;
+  font-size: 14px;
+  color: #dcdcdc;
+}
+
+/* Navigasi Tab */
+nav {
+  padding: 0 30px 20px 30px;
+  display: flex;
+  gap: 10px;
+}
+nav button {
+  background: #004080;
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+nav button.active, nav button:hover {
+  background-color: #0055a5;
+}
+
+.container {
+  padding: 0 30px 30px 30px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #222;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Tabel Form Penambahan/Edit Stok (Label di kiri, Input di kanan) */
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+.form-table td {
+  padding: 10px;
+  border: none;
+  vertical-align: middle;
+}
+.form-table td.label-col {
+  width: 200px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+.form-table input, .form-table select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Filter Bar di atas tabel */
+.filter-bar {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.filter-bar input, .filter-bar select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Tabel Data Stok Utama */
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+  font-size: 14px;
+}
+table.data-table th, table.data-table td {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  text-align: left;
+}
+table.data-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+}
+table.data-table tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+
+/* Badge Status */
+.badge {
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+.badge-success { background: #28a745; }
+.badge-warning { background: #ff9800; }
+.badge-danger { background: #dc3545; }
+
+/* Tombol Umum */
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+.btn-primary { background: #007bff; color: white; }
+.btn-primary:hover { background: #0056b3; }
+.btn-danger { background: #dc3545; color: white; }
+.btn-danger:hover { background: #bd2130; }
+.btn-secondary { background: #6c757d; color: white; }
+
+/* Modal */
+.modal-backdrop { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 100; }
+.modal-content { background: white; padding: 20px; border-radius: 6px; width: 350px; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 15px; }
